@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RegponGit Apps</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+      background-color: #f5f5f7;
+      color: #1d1d1f;
+      min-height: 100vh;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px 40px;
+    }
+
+    header h1 {
+      font-size: 2.4rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+    }
+
+    header p {
+      margin-top: 12px;
+      font-size: 1.1rem;
+      color: #6e6e73;
+    }
+
+    .apps {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 20px 80px;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 24px;
+    }
+
+    .app-card {
+      background: #fff;
+      border-radius: 20px;
+      padding: 32px;
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      text-decoration: none;
+      color: inherit;
+      transition: transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+    }
+
+    .app-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .app-icon {
+      width: 100px;
+      height: 100px;
+      border-radius: 22px;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 48px;
+      background: linear-gradient(135deg, #1a1a2e, #16213e);
+      color: #fff;
+    }
+
+    .app-icon img {
+      width: 100%;
+      height: 100%;
+      border-radius: 22px;
+      object-fit: cover;
+    }
+
+    .app-info {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .app-info h2 {
+      font-size: 1.4rem;
+      font-weight: 600;
+    }
+
+    .app-info .app-category {
+      font-size: 0.85rem;
+      color: #6e6e73;
+      margin-top: 4px;
+    }
+
+    .app-info .app-description {
+      margin-top: 10px;
+      font-size: 0.95rem;
+      color: #424245;
+      line-height: 1.5;
+    }
+
+    .app-store-badge {
+      margin-top: 14px;
+      display: inline-block;
+    }
+
+    .app-store-badge img {
+      height: 40px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      color: #6e6e73;
+      font-size: 0.85rem;
+    }
+
+    @media (max-width: 500px) {
+      header {
+        padding: 40px 16px 28px;
+      }
+
+      header h1 {
+        font-size: 1.8rem;
+      }
+
+      .apps {
+        padding: 0 16px 60px;
+      }
+
+      .app-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 28px 24px;
+        gap: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>RegponGit Apps</h1>
+    <p>リリースしたアプリの一覧</p>
+  </header>
+
+  <main class="apps">
+    <a class="app-card" href="https://apps.apple.com/jp/app/guitartuner/id6759312270" target="_blank" rel="noopener">
+      <div class="app-icon">🎸</div>
+      <div class="app-info">
+        <h2>GuitarTuner</h2>
+        <div class="app-category">ミュージック</div>
+        <p class="app-description">ギターのチューニングをサポートするアプリです。</p>
+        <div class="app-store-badge">
+          <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" alt="Download on the App Store">
+        </div>
+      </div>
+    </a>
+  </main>
+
+  <footer>
+    &copy; 2025 RegponGit
+  </footer>
+</body>
+</html>
